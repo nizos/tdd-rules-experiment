@@ -2,6 +2,11 @@
 
 An experiment examining the difference between strictly following TDD rules versus developing with a TDD mindset, using Claude Code and TDD-Guard.
 
+## Experiment Structure
+
+- **Original experiment** (`src/` directory): TDD with mechanical rule enforcement only
+- **Guided experiment** (`guided/` directory): TDD with explicit design guidance
+
 ## Research Question
 
 Does mechanically following strict TDD rules guarantee high-quality software, or is meaningful design thinking during the "Refactor" phase essential?
@@ -12,16 +17,30 @@ Does mechanically following strict TDD rules guarantee high-quality software, or
 - **AI Agent**: Claude Code (Opus 4)
 - **Task**: Implement a shopping cart system with TypeScript
 
+### Original Experiment (src/)
+
 The `CLAUDE.md` file intentionally omitted TDD requirements and architectural patterns, providing only functional requirements.
 This allowed us to observe what happens when TDD rules are enforced mechanically without design guidance.
 
-Prompt used:
+### Guided Experiment (guided/)
+
+The same task was repeated with an enhanced `CLAUDE.md` that included:
+
+- Development methodology principles
+- Testing guidelines
+- Explicit TDD mindset instructions
+- Code smell identification
+- Design emergence guidance
+
+Note: In this experiment, the agent paused during development and required prompting with "proceed" twice to continue.
+
+Prompt used for both experiments:
 
 ```
 Take a look at the README.md and CLAUDE.md and start the development
 ```
 
-## Key Findings
+## Key Findings from Original Experiment
 
 ### What Partially Worked: Test Quality
 
