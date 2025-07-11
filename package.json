@@ -35,6 +35,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.1.2",
     "prettier": "^3.1.1",
+    "tdd-guard": "^0.1.0",
     "tsx": "^4.20.3",
     "typescript": "^5.2.2",
     "vitest": "^3.2.2"
